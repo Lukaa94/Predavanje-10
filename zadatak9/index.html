@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 9 – AJAX POST zahtjev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 9 – AJAX slanje podataka (POST)</h1>
+
+    <!--
+        ZADATAK:
+        Forma za kreiranje nove objave. Pritiskom na "Objavi" šalje se
+        POST zahtjev na API s JSON tijelom. Prikažite odgovor servera.
+        
+        API endpoint: https://jsonplaceholder.typicode.com/posts
+        Metoda: POST
+        Content-Type: application/json
+    -->
+
+    <form id="forma-objave">
+        <div class="polje">
+            <label for="naslov">Naslov objave:</label>
+            <input type="text" id="naslov" placeholder="Unesite naslov..." required>
+        </div>
+
+        <div class="polje">
+            <label for="sadrzaj">Sadržaj:</label>
+            <textarea id="sadrzaj" rows="5" placeholder="Unesite tekst objave..." required></textarea>
+        </div>
+
+        <button type="submit" id="gumb-objavi">Objavi</button>
+    </form>
+
+    <!-- Loader -->
+    <p id="slanje" class="skriveno">Slanje...</p>
+
+    <!-- Prikaz odgovora servera -->
+    <div id="odgovor" class="skriveno">
+        <h2>Odgovor servera:</h2>
+        <p id="status-kod"></p>
+        <pre id="odgovor-json"></pre>
+    </div>
+
+    <!-- Poruka greške -->
+    <p id="greska" class="greska skriveno">Greška pri slanju podataka.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

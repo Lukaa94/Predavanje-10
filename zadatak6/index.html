@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 6 – AJAX dohvat podataka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 6 – AJAX dohvat podataka</h1>
+
+    <!--
+        ZADATAK:
+        Pritiskom na gumb dohvatite listu korisnika s API-ja i prikažite ih.
+        Dok se podaci učitavaju prikazati "Učitavanje...", a pri grešci poruku greške.
+        
+        API endpoint: https://jsonplaceholder.typicode.com/users
+    -->
+
+    <button id="gumb-ucitaj">Učitaj korisnike</button>
+
+    <!-- Poruka za učitavanje -->
+    <p id="ucitavanje" class="skriveno">Učitavanje...</p>
+
+    <!-- Poruka greške -->
+    <p id="greska" class="greska skriveno">Greška pri dohvatu podataka.</p>
+
+    <!-- Ovdje se renderiraju kartice korisnika -->
+    <div id="lista-korisnika">
+        <!-- TODO: JavaScript će ovdje dinamički ubaciti kartice
+             Svaka kartica treba izgledati otprilike ovako:
+             <div class="kartica">
+                 <h3>Ime Korisnika</h3>
+                 <p>email@primjer.com</p>
+             </div>
+        -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 7 – AJAX pretraživanje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 7 – AJAX pretraživanje</h1>
+
+    <!--
+        ZADATAK:
+        Nadogradnja Zadatka 6.
+        Podaci se učitavaju jednom pri učitavanju stranice.
+        Input za pretraživanje filtrira prikazane korisnike u realnom vremenu
+        dok korisnik tipka – BEZ ponovnog poziva na API.
+        Pretraživanje radi po imenu i emailu (case-insensitive).
+    -->
+
+    <div class="kontrole">
+        <p id="ucitavanje">Učitavanje korisnika...</p>
+        <input
+            type="text"
+            id="pretraga"
+            placeholder="Pretraži po imenu ili emailu..."
+            class="skriveno"
+        >
+    </div>
+
+    <!-- Poruka ako nema rezultata -->
+    <p id="nema-rezultata" class="skriveno">Nema korisnika koji odgovaraju pretrazi.</p>
+
+    <!-- Poruka greške -->
+    <p id="greska" class="greska skriveno">Greška pri dohvatu podataka.</p>
+
+    <!-- Ovdje se renderiraju filtrirani korisnici -->
+    <div id="lista-korisnika"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

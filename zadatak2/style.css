@@ -1,0 +1,67 @@
+/* Zadatak 2 – Kalkulator */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.kalkulator {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    background: #f9f9f9;
+}
+
+.inputi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.inputi input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.gumbi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.gumbi button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.gumbi button:hover {
+    background-color: #0056b3;
+}
+
+.rezultat {
+    min-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* TODO: Dodajte klasu .greska za crveni tekst (za grešku dijeljenja s nulom) */

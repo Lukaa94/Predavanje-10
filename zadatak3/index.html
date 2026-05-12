@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 3 – Dinamička lista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 3 – Dinamička lista</h1>
+
+    <!--
+        ZADATAK:
+        Klikanjem "Dodaj" novi tekst se dodaje kao <li> element u listu.
+        Svaki element liste mora imati gumb "Obriši" koji ga uklanja.
+        Ako je input prazan, ne dodavati ništa.
+    -->
+
+    <div class="unos">
+        <input type="text" id="unos-tekst" placeholder="Unesite stavku...">
+        <button id="gumb-dodaj">Dodaj</button>
+    </div>
+
+    <!-- TODO: Elementi se dinamički dodaju u ovu listu iz JavaScript-a -->
+    <ul id="lista">
+        <!-- Primjer kako treba izgledati jedan element:
+        <li>
+            <span>Moja stavka</span>
+            <button class="gumb-obrisi">Obriši</button>
+        </li>
+        -->
+    </ul>
+
+    <!-- Broj stavki u listi – ažurirajte u JavaScript-u -->
+    <p id="broj-stavki">Broj stavki: 0</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

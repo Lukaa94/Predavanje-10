@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 10 – Mini SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+        ZADATAK:
+        Jednostranična aplikacija (SPA) s 3 "stranice".
+        Klik na navigaciju ne učitava novu HTML stranicu –
+        umjesto toga JavaScript mijenja sadržaj glavnog dijela.
+        
+        Stranice:
+          - Početna: statički pozdravni tekst
+          - Korisnici: fetch https://jsonplaceholder.typicode.com/users
+          - Objave: fetch https://jsonplaceholder.typicode.com/posts (prvih 10)
+    -->
+
+    <nav id="navigacija">
+        <!-- data-stranica atribut govori JS-u koja stranica treba biti prikazana -->
+        <button class="nav-gumb aktivan" data-stranica="pocetna">Početna</button>
+        <button class="nav-gumb" data-stranica="korisnici">Korisnici</button>
+        <button class="nav-gumb" data-stranica="objave">Objave</button>
+    </nav>
+
+    <main id="sadrzaj">
+        <!-- JavaScript renderira sadržaj ovdje ovisno o aktivnoj "stranici" -->
+        <!-- Početno stanje prikazuje se u script.js -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

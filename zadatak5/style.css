@@ -1,0 +1,76 @@
+/* Zadatak 5 – XHTML Struktura */
+
+/* NAPOMENA: CSS je isti za HTML i XHTML – nema posebnih XHTML pravila za CSS */
+
+body {
+    font-family: Georgia, serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+/* Navigacija */
+#navigacija {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 16px;
+    background-color: #333;
+    padding: 10px 16px;
+    border-radius: 4px;
+}
+
+#navigacija li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+#navigacija li a:hover {
+    text-decoration: underline;
+}
+
+/* Naslovi */
+h1 {
+    color: #1a1a2e;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Slika */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Tablica */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #0056b3;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* TODO: Dodajte :nth-child(even) za naizmjenično bojanje redaka tablice */

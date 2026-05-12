@@ -1,0 +1,63 @@
+/* Zadatak 1 – Validacija forme */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.polje {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* TODO: Dodajte stil za poruku greške
+   - klasa .greska
+   - crvena boja teksta (#dc3545)
+   - mali font (12px)
+   - prikazuje se ispod inputa
+*/
+
+/* TODO: Dodajte stil za input koji ima grešku
+   - klasa .input-greska
+   - crveni obrub (border: 1px solid #dc3545)
+*/
+
+/* TODO: Dodajte stil za poruku uspjeha
+   - klasa .uspjeh ili id #poruka-uspjeha
+   - zelena boja teksta (#28a745)
+   - podebljano
+*/

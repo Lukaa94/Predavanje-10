@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1 – Validacija forme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 1 – Validacija forme</h1>
+
+    <!--
+        ZADATAK:
+        Napravite validaciju forme. Pritiskom na "Pošalji" JavaScript
+        treba provjeriti svako polje i prikazati grešku ako nije ispravno.
+        Ako su sva polja ispravna, prikazati poruku uspjeha.
+    -->
+
+    <form id="forma" novalidate>
+
+        <div class="polje">
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" placeholder="Unesite ime">
+            <!-- TODO: Ispod dodajte <span> za poruku greške, npr. id="greska-ime" -->
+        </div>
+
+        <div class="polje">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Unesite email">
+            <!-- TODO: Ispod dodajte <span> za poruku greške, npr. id="greska-email" -->
+        </div>
+
+        <div class="polje">
+            <label for="lozinka">Lozinka:</label>
+            <input type="password" id="lozinka" placeholder="Minimalno 6 znakova">
+            <!-- TODO: Ispod dodajte <span> za poruku greške, npr. id="greska-lozinka" -->
+        </div>
+
+        <button type="submit">Pošalji</button>
+    </form>
+
+    <!-- TODO: Dodajte <p> element za poruku uspjeha, npr. id="poruka-uspjeha" -->
+
+    <script src="script.js"></script>
+</body>
+</html>

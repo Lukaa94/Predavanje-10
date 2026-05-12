@@ -1,0 +1,109 @@
+/* Zadatak 10 – Mini SPA */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+/* Navigacija */
+#navigacija {
+    display: flex;
+    gap: 0;
+    background-color: #1a1a2e;
+    padding: 0;
+}
+
+.nav-gumb {
+    padding: 16px 28px;
+    background: transparent;
+    color: #aaa;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-gumb:hover {
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* Aktivna stranica u navigaciji */
+.nav-gumb.aktivan {
+    background: #007bff;
+    color: white;
+}
+
+/* Glavni sadržaj */
+#sadrzaj {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 { color: #1a1a2e; margin-bottom: 16px; }
+h2 { color: #333; margin-bottom: 16px; }
+
+/* Loader */
+.loader {
+    color: #666;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* Kartica korisnika */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.kartica {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.kartica h3 {
+    color: #007bff;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.kartica p {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+/* Kartica objave */
+.objava {
+    background: white;
+    border-left: 4px solid #007bff;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.objava h3 {
+    color: #1a1a2e;
+    margin-bottom: 6px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.objava p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+}

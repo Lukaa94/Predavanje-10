@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 4 – Odbrojavač</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 4 – Tajmer i odbrojavanje</h1>
+
+    <!--
+        ZADATAK:
+        Korisnik unese broj sekundi, pritisne Start i odbrojavanje teče.
+        Stop pauzira odbrojavanje. Kada dođe do 0, prikaži poruku.
+    -->
+
+    <div class="tajmer">
+        <div class="unos">
+            <label for="sekunde">Unesite broj sekundi:</label>
+            <input type="number" id="sekunde" min="1" value="10" placeholder="npr. 10">
+        </div>
+
+        <div class="gumbi">
+            <button id="gumb-start">▶ Start</button>
+            <button id="gumb-stop" disabled>⏹ Stop</button>
+            <!-- TODO: Dodajte gumb Reset kao bonus -->
+        </div>
+
+        <!-- Ovdje se ažurira preostalo vrijeme -->
+        <div id="prikaz-vremena" class="prikaz">
+            <!-- Početno stanje: prikazuje vrijednost iz inputa -->
+            --
+        </div>
+
+        <!-- Poruka kad istekne -->
+        <p id="poruka-isteka" class="skriveno">⏰ Vrijeme je isteklo!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

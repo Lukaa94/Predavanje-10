@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 8 – Bilješke (localStorage)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Zadatak 8 – Bilješke s localStorage</h1>
+
+    <!--
+        ZADATAK:
+        Aplikacija za bilješke koja pamti podatke i nakon zatvaranja browsera.
+        localStorage se koristi za pohranu – podaci ostaju sve dok ih korisnik
+        ručno ne obriše ili ne pozovemo localStorage.removeItem().
+    -->
+
+    <div class="forma-biljeska">
+        <input type="text" id="naslov" placeholder="Naslov bilješke" maxlength="80">
+        <textarea id="sadrzaj" rows="4" placeholder="Tekst bilješke..."></textarea>
+        <button id="gumb-spremi">Spremi bilješku</button>
+    </div>
+
+    <hr>
+
+    <h2>Pohranjene bilješke <span id="broj-biljesaka">(0)</span></h2>
+
+    <!-- Bilješke se renderiraju ovdje -->
+    <div id="lista-biljesaka">
+        <!-- Svaka bilješka izgleda ovako:
+        <div class="biljeska">
+            <h3>Naslov</h3>
+            <p>Tekst bilješke</p>
+            <small>Pohranjeno: 12.5.2026. 14:30</small>
+            <button class="gumb-obrisi-biljesku" data-id="1234567890">Obriši</button>
+        </div>
+        -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Zadatak 4 – Odbrojavač */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.tajmer {
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    padding: 30px;
+    background: #f0f4ff;
+}
+
+.unos {
+    margin-bottom: 20px;
+}
+
+.unos label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.unos input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+}
+
+.gumbi {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gumbi button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#gumb-start {
+    background-color: #28a745;
+    color: white;
+}
+
+#gumb-start:hover {
+    background-color: #1e7e34;
+}
+
+#gumb-stop {
+    background-color: #dc3545;
+    color: white;
+}
+
+#gumb-stop:hover:not(:disabled) {
+    background-color: #a71d2a;
+}
+
+#gumb-stop:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.prikaz {
+    font-size: 64px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+/* TODO: Dodajte animaciju ili promjenu boje kad je < 5 sekundi (klasa .hitno) */
+/* .hitno { color: #dc3545; } */
+
+.skriveno {
+    display: none;
+}
+
+#poruka-isteka {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    /* Klasa .skriveno je inicijalno sakriva – uklonite je u JS kada istekne */
+}

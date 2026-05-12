@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    ZADATAK 5 – XHTML 1.0 Strict
+    
+    XHTML PRAVILA koja morate poštovati:
+    ✔ DOCTYPE deklaracija je obavezna (već dodana gore)
+    ✔ Svi tagovi moraju biti zatvoreni: <br /> <img /> <input />
+    ✔ Svi nazivi tagova i atributa MORAJU biti malim slovima: <div>, ne <DIV>
+    ✔ Vrijednosti atributa MORAJU biti u navodnicima: href="link.html"
+    ✔ Atribut 'alt' je obavezan za sve <img /> elemente
+    ✔ Atributi se ne smiju skraćivati: checked="checked" (ne samo checked)
+    ✔ Elementi se moraju ispravno ugniježditi: <b><i>tekst</i></b> (ispravno)
+    ✗ Pogrešno: <b><i>tekst</b></i>
+    
+    ZADATAK:
+    Dovršite ovu XHTML stranicu s traženim elementima.
+    Nakon što završite, provjerite valjanost na: https://validator.w3.org/
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hr" lang="hr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Primjer ispravne XHTML stranice" />
+    <title>Zadatak 5 – XHTML Struktura</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVIGACIJA: <ul> s linkovima -->
+    <!-- TODO: Napravite navigacijsku listu s barem 3 linka -->
+    <ul id="navigacija">
+        <li><a href="#uvod">Uvod</a></li>
+        <!-- TODO: Dodajte još linkova -->
+    </ul>
+
+    <!-- NASLOV I PODNASLOVI -->
+    <!-- TODO: Dodajte <h1> s glavnim naslovom stranice -->
+
+    <!-- TODO: Dodajte <h2> s podnaslovom "O stranici" -->
+
+    <!-- TODO: Ispod dodajte dva ili više odlomaka (<p>) s tekstom -->
+    <div id="sadrzaj">
+        <!-- Ovdje ide sadržaj -->
+    </div>
+
+    <!-- SLIKA: obavezan atribut alt="" -->
+    <!-- TODO: Dodajte sliku. Koristite placeholder ili stvarnu sliku.
+         Primjer s placeholderom:
+         <img src="https://via.placeholder.com/400x200" alt="Opis slike" width="400" height="200" />
+         POZOR: u XHTML <img> mora biti samozatvoren: <img ... />
+    -->
+
+    <!-- TABLICA: 3 stupca, zaglavlje + 3 retka podataka -->
+    <!-- TODO: Napravite tablicu s:
+         - <thead> koji sadrži <tr> s tri <th> elementa (zaglavlja stupaca)
+         - <tbody> koji sadrži tri <tr> retka, svaki s tri <td> ćelije
+         
+         Primjer strukture:
+         <table>
+             <thead>
+                 <tr>
+                     <th>Stupac 1</th>
+                     <th>Stupac 2</th>
+                     <th>Stupac 3</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>Podatak 1</td>
+                     <td>Podatak 2</td>
+                     <td>Podatak 3</td>
+                 </tr>
+                 ...
+             </tbody>
+         </table>
+    -->
+
+</body>
+</html>
