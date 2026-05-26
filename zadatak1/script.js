@@ -1,13 +1,4 @@
-// Zadatak 1 – Validacija forme
-//
-// SMJERNICE:
-// 1. Koristite event.preventDefault() da spriječite reload stranice pri submitu forme
-// 2. Za svako polje dohvatite vrijednost s .value.trim() – trim() uklanja razmake s rubova
-// 3. Provjerite uvjete: prazno polje (=== ''), sadrži '@' (.includes('@')), duljina (.length >= 6)
-// 4. Grešku prikažite u <span> elementu ispod odgovarajućeg inputa (postavite .textContent)
-// 5. Koristite classList.add('greska') za crveni stil i classList.remove('greska') za uklanjanje
-// 6. Koristite varijablu imaGresaka = true/false da pratite je li bilo grešaka
-//
+
 // KORISNE METODE I SVOJSTVA:
 //   document.getElementById('id')        → dohvat elementa po ID-u
 //   element.value.trim()                 → čitanje vrijednosti inputa (trim = uklanja razmake)
@@ -20,48 +11,56 @@
 //   element.style.display = 'block'      → prikazivanje sakrivenog elementa
 //   element.style.display = 'none'       → sakrivanje elementa
 
-document.addEventListener('DOMContentLoaded', function () {
+const forma = document.getElementById("forma");
 
-    // TODO: Dohvatite formu
-    // const forma = document.getElementById('forma');
+const inputIme = document.getElementById("ime");
+const inputEmail = document.getElementById("email");
+const inputLozinka = document.getElementById("lozinka");
 
-    // TODO: Dohvatite inpute
-    // const inputIme     = document.getElementById('ime');
-    // const inputEmail   = document.getElementById('email');
-    // const inputLozinka = document.getElementById('lozinka');
+const greskaIme = document.getElementById("greska-ime");
+const greskaEmail = document.getElementById("greska-email");
+const greskaLozinka = document.getElementById("greska-lozinka");
 
-    // TODO: Dohvatite elemente za greške (koje ste dodali u HTML)
-    // const greskaIme     = document.getElementById('greska-ime');
-    // const greskaEmail   = document.getElementById('greska-email');
-    // const greskaLozinka = document.getElementById('greska-lozinka');
+const poruka = document.getElementById("poruka-uspjeha");
 
-    // TODO: Dohvatite element za poruku uspjeha
-    // const poruka = document.getElementById('poruka-uspjeha');
+forma.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    // TODO: Dodajte event listener na submit
-    // forma.addEventListener('submit', function (event) {
-    //     event.preventDefault(); // spriječava reload stranice
-    //
-    //     let imaGresaka = false;
-    //
-    //     // Provjera polja Ime
-    //     if (inputIme.value.trim() === '') {
-    //         greskaIme.textContent = 'Ime je obavezno!';
-    //         imaGresaka = true;
-    //     } else {
-    //         greskaIme.textContent = '';
-    //     }
-    //
-    //     // TODO: Provjera polja Email (mora sadržavati '@')
-    //
-    //     // TODO: Provjera polja Lozinka (minimalno 6 znakova)
-    //
-    //     // Ako nema grešaka – prikaži poruku uspjeha
-    //     if (!imaGresaka) {
-    //         poruka.textContent = 'Forma je uspješno poslana!';
-    //     } else {
-    //         poruka.textContent = '';
-    //     }
-    // });
+  greskaIme.textContent = "";
+  greskaEmail.textContent = "";
+  greskaLozinka.textContent = "";
+  poruka.textContent = "";
 
+  let imaGresaka = false;
+
+  if (inputIme.value.trim() === "") {
+    imaGresaka = true;
+    greskaIme.textContent = "Ime je obavezno!";
+    inputIme.classList.remove("uspjeh");
+    inputIme.classList.add("greska");
+  } else {
+    inputIme.classList.add("uspjeh");
+  }
+
+  if (!inputEmail.value.includes("@")) {
+    imaGresaka = true;
+    greskaEmail.textContent = "Email mora sadržavati @";
+    inputEmail.classList.remove("uspjeh");
+    inputEmail.classList.add("greska");
+  } else {
+    inputEmail.classList.add("uspjeh");
+  }
+
+  if (inputLozinka.value.length < 6) {
+    imaGresaka = true;
+    greskaLozinka.textContent = "Lozinka mora imati minimalno 6 znakova!";
+    inputLozinka.classList.remove("uspjeh");
+    inputLozinka.classList.add("greska");
+  } else {
+    inputLozinka.classList.add("uspjeh");
+  }
+
+  if (!imaGresaka) {
+    poruka.innerHTML = "<b>Forma je uspješno poslana!</b>";
+  }
 });

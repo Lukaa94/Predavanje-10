@@ -1,4 +1,3 @@
-/* Zadatak 1 – Validacija forme */
 
 body {
     font-family: Arial, sans-serif;
@@ -44,20 +43,20 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* TODO: Dodajte stil za poruku greške
-   - klasa .greska
-   - crvena boja teksta (#dc3545)
-   - mali font (12px)
-   - prikazuje se ispod inputa
-*/
+#greska-ime, #greska-email, #greska-lozinka{
+    color: #dc3545;
+    font-size: 12px;
+}
 
-/* TODO: Dodajte stil za input koji ima grešku
-   - klasa .input-greska
-   - crveni obrub (border: 1px solid #dc3545)
-*/
+.greska{
+    border: 2px solid #dc3545;
+}
 
-/* TODO: Dodajte stil za poruku uspjeha
-   - klasa .uspjeh ili id #poruka-uspjeha
-   - zelena boja teksta (#28a745)
-   - podebljano
-*/
+.uspjeh{
+    border: 2px solid #28a745;
+}
+
+#poruka-uspjeha{
+    color: green;
+}
+
