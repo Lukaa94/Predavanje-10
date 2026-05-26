@@ -61,6 +61,6 @@ forma.addEventListener("submit", function (event) {
   }
 
   if (!imaGresaka) {
-    poruka.innerHTML = "<b>Forma je uspješno poslana!</b>";
+    poruka.innerHTML = "<strong>Forma je uspješno poslana!</strong>";
   }
 });
