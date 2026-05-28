@@ -1,42 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zadatak 2 Kalkulator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
     <h1>Zadatak 2 Kalkulator</h1>
 
-    <!--
-        ZADATAK:
-        Napravite kalkulator s dva inputa i četiri gumba za operacije.
-        Svaki gumb treba izračunati odgovarajući rezultat i prikazati ga.
-        Dijeljenje s nulom mora biti obrađeno.
-    -->
-
     <div class="kalkulator">
-        <div class="inputi">
-            <input id="broj1" placeholder="Prvi broj">
-            <span>i</span>
-            <input id="broj2" placeholder="Drugi broj">
-        </div>
+      <div class="inputi">
+        <input id="broj1" placeholder="Prvi broj" />
+        <span id="operacija"></span>
+        <input id="broj2" placeholder="Drugi broj" />
+      </div>
 
-        <div class="gumbi">
-            <!-- TODO: Dodajte event listener na svaki gumb u script.js -->
-            <button id="zbrajanje">+ Zbroji</button>
-            <button id="oduzimanje">− Oduzmi</button>
-            <button id="mnozenje">× Pomnoži</button>
-            <button id="dijeljenje">÷ Podijeli</button>
-        </div>
+      <div class="gumbi">
+        <!-- TODO: Dodajte event listener na svaki gumb u script.js -->
+        <button id="zbrajanje">+ Zbroji</button>
+        <button id="oduzimanje">− Oduzmi</button>
+        <button id="mnozenje">× Pomnoži</button>
+        <button id="djeljenje">÷ Podijeli</button>
+      </div>
 
-        <!-- Ovdje se prikazuje rezultat -->
-        <div id="rezultat" class="rezultat">
-            <!-- TODO: Rezultat se ispisuje ovdje iz JavaScript-a -->
-        </div>
+      <!-- Ovdje se prikazuje rezultat -->
+      <div id="rezultat" class="rezultat"></div>
     </div>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
