@@ -71,7 +71,6 @@ djeljenje.addEventListener("click", function () {
     return;
   }
 
-  rezultat.classList.remove("greska");
   rezultat.textContent = `Rezultat: ${brojevi.a / brojevi.b}`;
   operacija.textContent ="/";
 });
