@@ -13,7 +13,7 @@ const input2 = document.getElementById("broj2");
 
 const zbrajanje = document.getElementById("zbrajanje");
 const oduzimanje = document.getElementById("oduzimanje");
-const množenje = document.getElementById("mnozenje");
+const mnozenje = document.getElementById("mnozenje");
 const djeljenje = document.getElementById("djeljenje");
 
 const rezultat = document.getElementById("rezultat");
@@ -51,12 +51,12 @@ oduzimanje.addEventListener("click", function () {
   operacija.textContent ="-";
 });
 
-množenje.addEventListener("click", function () {
+mnozenje.addEventListener("click", function () {
   const brojevi = dohvatiBrojeve();
 
   if (brojevi === null) return;
 
-  rezultat.textContent = "Rezultat: " + brojevi.a * brojevi.b;
+  rezultat.textContent = "Rezultat: " + (brojevi.a * brojevi.b);
   operacija.textContent ="*";
 });
 

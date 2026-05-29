@@ -18,7 +18,6 @@
 //   input.value = ''                       → pražnjenje inputa
 //   lista.children.length                  → broj djece liste
 
-document.addEventListener('DOMContentLoaded', function () {
 
     // TODO: Dohvatite potrebne elemente
     // const input       = document.getElementById('unos-tekst');
@@ -69,4 +68,4 @@ document.addEventListener('DOMContentLoaded', function () {
     //     if (event.key === 'Enter') dodajStavku();
     // });
 
-});
+
