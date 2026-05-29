@@ -29,6 +29,8 @@ function dodajStavku() {
   span.textContent = tekst;
 
   gumbObrisi.textContent = "Obriši";
+
+  li.classList.add("gumb-li");
   gumbObrisi.classList.add("gumb-obrisi");
 
   gumbObrisi.addEventListener("click", function () {
